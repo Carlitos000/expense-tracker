@@ -19,27 +19,38 @@
     </h1>
     
     <div class="balance-area">
-        <p class="balance">Balance <span id="total-balance">0</span></p>
-        <p class="result">Income <span id="income">0</span></p>
-        <p class="result">Expense <span id="expense">0</span></p>
+        <h2>Balance 
+            <span id="balance">0</span>
+        </h2>
+    </div>
+    <div>
+        <h3>Income </h3>
+            <span id="income" class="income plus" >0</span>
+        <h3>Expense </h3>
+            <span id="expense" class="expense minus">0</span>
 
     </div>
 
     <h2>Add New Transaction</h2>
     <div class="transaction-area">
-    
-        <p class="descripcion">Descripcion</p>
-        <input id="descripcion-box" type="text">
-        <p class="amount">Amount</p>
-        <input id="amount-box" type="number">
+        <div>
+        <label for="detail-box">Descripcion</label>
+        <input id="detail-box" type="text" placeholder="Enter transaction detail">
+        </div>
+        <div>
+        <label for="amount-box">Amount</label>
+        <input id="amount-box" type="number" placeholder="Enter transaction amount">
+        </div>
 
     </div>
-    <button class="btn btn-blue">Add Transaction</button>
-    <p>instructions</p>
+    <button class="btn">Add Transaction</button>
+    <p>Instructions</p>
     
     <div>
     <h2>Transaction History</h2>
-        <span id="tra-history">x</span>
+        <ul id="history" class="tracker">x
+
+        </ul>
     </div>
 
 
